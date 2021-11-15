@@ -1,0 +1,88 @@
+@charset "utf-8";
+*{margin:0; padding:0; box-sizing:border-box;}
+body{background:#fff; color:#222328;}
+a{text-decoration:none; color:#222328;}
+li{list-style:none;}
+.cf:after{content:""; clear:both; display:block;}
+.ir-so{font-size:0; width:0; height:0; line-height: 0; overflow: hidden;}
+
+#skip{position:absolute; z-index: 999; width:100%; height:auto; font-size:0;}
+#skip ul{}
+#skip ul li{width:100%; height:auto; font-size:0;}
+#skip ul li a{display:block; padding:0; font-size:0; text-align:center; color:#fff; background-color: #000;}
+#skip ul li a:focus{padding:20px; font-size:16px;}
+
+/* 레이아웃 */
+#wrap{width:1200px; height:700px; background-color: #fff; border:1px solid #000; margin:0 auto;}
+#header{width:1200px; height:100px; border:1px solid #000; display:flex; justify-content: space-between; align-items: center;}
+#banner{width:1200px; height:300px; border:1px solid #000; }
+#main{width:1200px; height:200px; border:1px solid #000; display:flex; justify-content: space-between;}
+#footer{width:1200px; height:100px; border:1px solid #000;}
+
+#nav{width:800px; }
+#nav>ul{display:flex;}
+#nav>ul>li{width:200px; text-align: center; }
+#nav>ul>li:hover>a{background-color: #d71111; color:#fff;}
+#nav>ul>li>a{display:block; width:100%; height:100%; padding:20px 0 20px;}
+
+#nav>ul>li>ul{position:absolute; width:200px; z-index: 9999; background-color: #ddd; display:none;}
+#nav>ul>li>ul>li{height:50px; line-height: 50px;}
+#nav>ul>li>ul>li:hover>a{background-color: #357761; color:#fff;}
+#nav>ul>li>ul>li>a{display: block; width:100%; height:100%; transition:.3s;}
+
+
+.slide{position:relative;}
+.slide ul{width:100%; height:100%; position:relative; top:0; left:0; overflow:hidden;}
+.slide ul li{position:absolute; left:0; top:-100%; }
+.slide ul li:first-child{top:0;}
+.slide ul li a{}
+.slide ul li a img{}
+
+
+.tab{width:500px; height:100%; border:1px solid #000; padding:10px; }
+.tabs{ }
+.tabs ul{display:flex; height:30px; align-items: center;}
+.tabs ul li.active{background-color: #357761; color:#000;}
+.tabs ul li{width:100px; text-align: center; border:1px solid #357761; margin-right:-1px;}
+.tabs ul li a{display:block; font-weight:bold; padding:10px;}
+
+.panel{position:relative; top:0; left:0;}
+.panel>div{position:absolute; top:0; left:0; width:500px; height:150px;}
+.panel .notice{padding:10px; display:none;}
+.panel .notice ul{}
+.panel .notice ul li{display:flex; justify-content: space-between; font-size:16px; line-height: 150%;}
+.panel .notice ul li a{display:block; width:80%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.panel .notice ul li span{display:block; width:18%;}
+.panel .gallery{}
+.panel .gallery ul{width:90%; height:100%; display: flex; justify-content: space-between; align-items: center;}
+.panel .gallery ul li{padding:5px;}
+.panel .gallery ul li a{}
+
+
+.event{width:350px; height:100%; border:1px solid #000; padding:10px }
+.event a{}
+.event a img{}
+
+
+.banner{width:350px; height:100%; border:1px solid #000; }
+.banner ul{width:100%; display:flex;justify-content: space-around; align-items: center; padding:10px;}
+.banner ul li{width:100px; height:180px; line-height: 40px; position:relative; text-align:center;  }
+.banner ul li a{display:block;  transition:.5s;}
+.banner ul li a img{width:100px;}
+.banner ul li strong{position:absolute; top:0; left:0; width:100%; height:90%; transition: .5s; opacity:0;}
+.banner ul li strong:hover{background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)); width: 100%; height:90%; position: absolute; top:0; left: 0; opacity: 1; color:#fff;}
+
+#footer{display:flex;justify-content: space-between; align-items: center;}
+.foot-logo{padding-left:20px;}
+.copyright{flex-basis:700px;}
+.copyright address{font-style: normal; font-size: 14px;}
+.sns{flex-basis: 250px;}
+.sns ul{display:flex; padding:10px;}
+.sns ul li{width:33.333%; height:40px; position:relative;}
+.sns ul li a{font-size:12px; position:absolute; bottom:-20px;}
+.sns ul li.instagram{background: url(../img/social_icon.png) no-repeat 0 0/100%;}
+.sns ul li.facebook{background: url(../img/social_icon.png) no-repeat  0 -45px/100%;}
+.sns ul li.youtube{background: url(../img/social_icon.png) no-repeat 0 -135px/100%;}
+.sns ul li.facebook a{left: 10px}
+.sns ul li.youtube a{left: 12px}
+
