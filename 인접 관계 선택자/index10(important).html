@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치 탐색 선택자 종류</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script>
+        $("li:first")
+        $("li").first()//전체 <li>요소 중 첫 번째 요소만 선택합니다.
+        
+            $("li:last")
+            $("li").last()//전체 <li>요소 중 마지막 요소만 선택합니다.
+
+                $("li:odd") //<li>요소 무리 중 짝수 번째 요소만 선택합니다.
+                $("li:even")//<li>요소 무리 중 홀수 번째 요소만 선택합니다.
+
+                $("li:first-of-type")//<li>요소 무리 중 첫 번째 요소만 선택합니다.
+                $("li:last-of-type")//<li>요소 무리 중 마지막 요소만 선택합니다.
+                
+                $("li:nth-child")//<li>요소 무리 중 세 번째 요소만  선택합니다.
+                $("li:nth-child(3n)")//<li>요소 무리 중 3의 배수 번째에 있는 요소만 선택합니다.
+                $("li:nth-last-of-type(2)")//<li>요소 무리 중 마지막 위치로부터 두 번째에 있는 요소만 선택합니다.
+                $("li:only-child")//<li>요소 내에 <li> 요소가 1개뿐인 <li> 요소만 선택합니다.
+
+                $("li:eq(2)")//<li>요소 중 인덱스 2가 참조하는 요소를 불러옵니다.
+                $("li").eq(2)
+
+                $("li:gt(1)")//<li>요소 중 인덱스 1보다 큰 인덱스가 참조하는 요소를 불러옵니다.
+                $("li:it(1)")//<li>요소 중 인덱스 1보다 작은 인덱스가 참조하는 요소를 불러옵니다.
+                $("li").slice(2)//<li>요소 중 인덱스 2부터 참조하는 요소를 불러옵니다.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
