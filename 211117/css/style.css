@@ -33,3 +33,25 @@ body{background-color: #303030;}
 #header #nav>ul>li>ul li:hover{background-color: #ffffff;transition: .4s;}
 #header #nav>ul>li>ul li a{display:block;color:#0066cc;}
 #header #nav>ul>li>ul li a:hover{color:#000;}
+
+#slide{}
+#slide ul{width:1000px; height:350px; position:relative; top:0; left:0; overflow:hidden;}
+#slide ul li{width:100%; height:100%; position:absolute; top:0; left:100%;}
+#slide ul li:first-child{left:0;}
+#slide ul li a{}
+#slide ul li a img{}
+
+#content{display:flex; justify-content: space-between;}
+#content div{border:1px solid #fff; width:50%; height:300px; }
+#content div h2{padding:10px; color:#0066cc; }
+#content .notice{}
+#content .notice>ul{}
+#content .notice>ul>li{padding:10px; display:flex; justify-content: space-between; align-items: center;}
+#content .notice>ul>li>a{display:block; width:70%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#content .notice>ul>li>span{width:20%;}
+
+#content .partner{}
+#content .partner>ul{}
+#content .partner>ul>li{padding:10px;}
+#content .partner>ul>li>a{display:block;}
+#content .partner>ul>li>a>img{width:100%; height:100px;}
