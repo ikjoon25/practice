@@ -26,7 +26,7 @@ li{list-style: none; color:#999999;}
 
 
 #slide{}
-#slide ul{width:100%; height:100%; position:relative; top:0; left:0; overflow: hidden;}
+#slide ul{width:960px; height:400px; position:relative; top:0; left:0; overflow: hidden;}
 #slide ul li{position:absolute; width:100%; height:100%; top:-100%; left:0;}
 #slide ul li:first-child{top:0;}
 #slide ul li a{}
@@ -57,3 +57,21 @@ li{list-style: none; color:#999999;}
 
 
 
+#shorcut{}
+#shorcut ul{width:100%; height:100%; display:flex; justify-content:space-around; align-items: center;}
+#shorcut ul li{position:relative; width:180px; height:150px; background: #bb692d url(../img/icon01.png) no-repeat center center;  }
+#shorcut ul li:nth-child(2){background: #bb692d url(../img/icon02.png) no-repeat center center;}
+#shorcut ul li:nth-child(3){background: #bb692d url(../img/icon03.png) no-repeat center center;}
+#shorcut ul li a{ position:absolute; top:80%; left:50%; transform: translateX(-50%); font-size:14px; font-weight: bold;}
+#shorcut ul li a:hover{color:#fff;}
+
+
+
+#footer{padding:10px;}
+#footer ul{display:flex; justify-content: center;}
+#footer ul li{border-right: 1px solid #000; padding:0 10px;}
+#footer ul li:last-child{border:none;}
+#footer ul li a{display:block;}
+#footer ul li a:hover{color:#bb692d;}
+#footer address{font-size: 14px; padding-left: 20px; padding-top:20px;}
+#footer address p{font-style: normal;}
