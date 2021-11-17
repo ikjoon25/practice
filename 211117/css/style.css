@@ -1,0 +1,35 @@
+@charset "utf-8";
+*{margin:0; padding:0; box-sizing: border-box;}
+a{text-decoration: none; color:#ffffff;}
+li{list-style: none; color:#ffffff;}
+#skip{position:absolute; width:100%; height:auto; font-size:0; overflow: hidden;}
+#skip ul{}
+#skip ul li{text-align: center; background-color: #000;}
+#skip ul li a{display:block; }
+#skip ul li a:focus{font-size:14px; padding:10px;}
+
+
+/* 레이아웃 */
+body{background-color: #303030;}
+#wrap{width:1000px; height:1100px; margin:0 auto;}
+#header{width:1000px; height:150px; border:1px solid #fff;}
+#slide{width:1000px; height:350px; border:1px solid #fff;}
+#content{width:1000px; height:500px; border:1px solid #fff;}
+#footer{width:1000px; height:100px; border:1px solid #fff;}
+
+
+#header{display:flex; justify-content:space-between; align-items: center;}
+#header h1{padding:10px;}
+#header h1 a{}
+#header h1 a img{}
+#header #nav{}
+#header #nav>ul{display:flex;}
+#header #nav>ul>li{width: 200px; height:50px;  text-align: center; line-height: 50px; transition: .4s;}
+#header #nav>ul>li:hover{background-color: #0066cc; transition: .4s;}
+#header #nav>ul>li>a{display:block; transition: .4s;}
+#header #nav>ul>li>a:hover{color:#000; transition: .4s;}
+#header #nav>ul>li>ul{display:none;z-index: 999;}
+#header #nav>ul>li>ul li{background-color: #ffffff; transition: .4s;}
+#header #nav>ul>li>ul li:hover{background-color: #ffffff;transition: .4s;}
+#header #nav>ul>li>ul li a{display:block;color:#0066cc;}
+#header #nav>ul>li>ul li a:hover{color:#000;}
