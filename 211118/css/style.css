@@ -1,0 +1,60 @@
+@charset "utf-8";
+#skip{position:absolute; width:100%; height:auto; font-size:0; overflow: hidden;}
+#skip ul{ }
+#skip ul li{text-align: center; background-color: #000;}
+#skip ul li a{display:block; background-color: #fff;}
+#skip ul li a:focus{font-size:14px; padding:10px; }
+*{margin:0; padding:0; box-sizing: border-box;}
+a{text-decoration: none; color:#333333;}
+li{list-style: none; color:#333333;}
+body{background-color: #fff; } 
+/* #48487d  #fabd43 */
+
+
+/* 레이아웃 */
+#wrap{width:1000px; height:700px; margin:0 auto; border:1px solid #000;}
+#header{width:1000px; height:100px; border:1px solid #000;}
+#slide{width:1000px; height:300px; border:1px solid #000;}
+#contents{width:1000px; height:200px; border:1px solid #000;}
+#footer{width:1000px; height:100px; border:1px solid #000;}
+
+#header{display:flex; justify-content: space-between; align-items: center;}
+#header #nav>ul{display:flex; align-items: center;width:1000px; height:100px; margin-left:40px; }
+#header #nav>ul>li{width:180px; height:50px; border:1px solid #fabd43; text-align: center; line-height: 50px; transition: .3s;}
+#header #nav>ul>li:hover{background-color: #313153; color:#fff;}
+#header #nav>ul>li>a{display:block;}
+#header #nav>ul>li>a:hover{color:#fff;}
+#header #nav>ul>li>ul{display: none; width:180px; background-color: #48487d; }
+#header #nav>ul>li>ul li:hover{background-color: #313153;transition: .3s;}
+#header #nav>ul>li>ul li a:hover{color:#fff;}
+#header #nav>ul>li>ul li a{display:block;}
+
+#slide{}
+#slide ul{width:1000px; height:300px; position:relative;}
+#slide ul li{position:absolute; top:0; left:0; opacity:0;}
+#slide ul li:first-child{opacity:1;}
+#slide ul li a{}
+#slide ul li a img{}
+
+
+#contents{display:flex;}
+#contents .notice{width:33.333%; height:inherit; padding:10px 0; margin-left:10px;}
+#contents .notice h2{}
+#contents .notice ul{width:100%;}
+#contents .notice ul li{width:100%; display:flex; padding:5px 0;}
+#contents .notice ul li a{display:block; width:70%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+#contents .notice ul li span{width:20%;}
+
+#contents .gallery{width:33.333%; height:inherit; padding:5px;}
+#contents .gallery h2{}
+#contents .gallery ul{display:flex;}
+#contents .gallery ul li{width:100%;}
+#contents .gallery ul li a{display:block;}
+#contents .gallery ul li a img{width:100px; height:150px;}
+
+#contents .shortcut{width:33.333%; height:inherit; padding:5px;}
+#contents .shortcut h2{}
+#contents .shortcut ul{}
+#contents .shortcut ul li{}
+#contents .shortcut ul li a{display:block;}
+#contents .shortcut ul li a img{width:300px; height:150px;}
