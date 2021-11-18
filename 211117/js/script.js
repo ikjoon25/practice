@@ -22,4 +22,3 @@ setInterval(function(){
 function move(tg, start, end){
     tg.css('left',start).stop().animate({left:end},500)
 }
-
